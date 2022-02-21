@@ -52,5 +52,6 @@ target_sources(headers-checker PRIVATE
     src/main.cpp
 )
 target_include_directories(headers-checker PRIVATE src)
-
 target_link_libraries(headers-checker PRIVATE nlohmann::json CLI11 fmt::fmt)
+
+install(TARGETS headers-checker DESTINATION .)
